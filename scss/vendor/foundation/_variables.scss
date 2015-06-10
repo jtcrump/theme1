@@ -1,6 +1,9 @@
 //
 // FOUNDATION SETTINGS
 //
+$screen-sm: 768px;
+$screen-lg: 992px;
+$screen-lg: 1200px;
 
 // This is the default html and body font-size for the base rem value.
 // $rem-base: 16px;
@@ -62,9 +65,13 @@ $oak-leaf: #006633;
 $green-parrot: #99CC66;
 $avenue-blue: #336699;
 
+$greySpanishMoss: #00331A;
+$newDarkGreen: #99CC66;
+$greenAccent: #99CC66;
 
 // font sizes
 $normal: 1.0em;
+
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;

@@ -12,16 +12,22 @@
 $include-html-top-bar-classes: $include-html-classes !default;
 
 // Background color for the top bar
-$topbar-bg-color: #333 !default;
+$topbar-bg-color: $primary-color !default;
 $topbar-bg: $topbar-bg-color !default;
 
 // Height and margin
-$topbar-height: 45px !default;
+$topbar-height: 145px !default;
 $topbar-margin-bottom: 0 !default;
+
+.top-fixed-nav{
+color: #fff !important;
+
+}
 
 // Controlling the styles for the title in the top bar
 $topbar-title-weight: $font-weight-normal !default;
-$topbar-title-font-size: rem-calc(17) !default;
+// $topbar-title-font-size: rem-calc(17) !default;
+$topbar-title-font-size: 40px !default;
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: #333 !default;
@@ -180,7 +186,8 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
 
       .name {
         height: $topbar-height;
-        margin: 0;
+        margin-top: 20px;
+        margin-bottom: -20px;
         font-size: $rem-base;
 
         h1 {
