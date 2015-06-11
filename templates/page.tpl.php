@@ -314,7 +314,8 @@
 
     <?php if ($site_name) :?>
       <div class="copyright large-12 columns">
-        &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
+        &copy; <?php print date('Y'); ?><!--- <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?> --->
+Tulane University, 6823 St. Charles Avenue, New Orleans, LA 70118 504-865-5000 <a href="mailto:website@tulane.edu">website@tulane.edu</a>
       </div>
     <?php endif; ?>
   </footer>
