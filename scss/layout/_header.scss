@@ -20,6 +20,42 @@ $screen-lg: 1200px;
 }
 
 
+.main_title
+{
+min-width:300px;
+  position: relative;
+/*
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+*/
+  float: left;
+  font-family: "Times New Roman",serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: -0.06em;
+}
+.main_title
+{
+  /* padding-top: 6px; */
+  font-size: 40px;
+}
+.move
+{
+  margin-left: -2px;
+  font-family: "Times New Roman",serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: -0.04em;
+}
+.move
+{
+  padding-top: 6px;
+  font-size: 40px;
+}
+
 
 .header {
         background:url('../images/bg_1.jpg') no-repeat center top transparent;
@@ -83,49 +119,42 @@ padding-bottom: 1px;
 
 		}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	}
 
 
 
-.header-table {
-display: table;
-height: 51px;
-padding: 4px 15px;
 
-margin-top: -4px;
+
+.header-table {
+border: 0px solid red;
+min-height:140px;
+min-width:450px;
+padding: 4px 15px;
+margin-top: 0px;
 margin-left:15%;
 }
-.cell-school { 
-/* font-family: $font-family-latin-modern; */
-display: table-cell; 
+
+#header-mid-banner ul{
 vertical-align: middle;
-width: 25%; 
-min-width:360px;
-border:0px solid red;
-padding:30px 20px;
+}
+
+#header-mid-banner li{
+border: 0px solid yellow;
+padding-right: 10px;
+display: inline-block;
+list-style-type: none;
+vertical-align: middle;
+}
+
+.cell-school { 
+border: 0px solid blue;
+display: inline-block;
 text-shadow: 1px 1px 2px #000;
 }
 
-
 .cell-dept { 
-display: table-cell; 
-vertical-align: middle; 
+border: 0px solid red;
+display: inline-block;
 text-shadow: 1px 1px 2px #000;
 }
 
@@ -134,19 +163,19 @@ color: #fff !important;
 }
 
 .cell-shield {
-display: table-cell; 
-vertical-align: middle;
+border: 0px solid red;
+display: inline-block;
 width: 42px;
-@media (min-width: $screen-sm) {
-width: 54px;
-}
+	@media (min-width: $screen-sm) {
+	width: 54px;
+	}
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md) { 
-width: 70px;
-}
-@media (min-width: $screen-lg) { 
-width: 80px;
-} 
+	@media (min-width: $screen-md) { 
+	width: 70px;
+	}
+	@media (min-width: $screen-lg) { 
+	width: 80px;
+	} 
 }
 
 h1 {

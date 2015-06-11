@@ -63,9 +63,24 @@
 	<div class="row-banner">
 		<div class="container">
 			<div class="header-table">
-				<div class="cell-shield"><div class="tu-shield"></div></div>
-				<div class="cell-school hidden-sm hidden-xs brand-school"><h1><a href="javascript:;">Tulane</a></h1> </div>
-				<div class="cell-dept"><h2><a href="/index.php"><?php print $linked_site_name; ?></a></h2></div>
+
+
+
+<ul id="header-mid-banner">
+
+<li><div class="cell-shield"><div class="tu-shield"></div></div></li>
+
+<li><div class="cell-school">
+<a href="//tulane.edu"><div class="main_title">T<span class="move">ulane University</span></div></a>
+</div></li>
+
+<li><div class="cell-dept"><h2><?php print $linked_site_name; ?><h2></div></li>
+
+</ul>
+
+
+
+
 			</div> 
 		</div>
 	</div>    
