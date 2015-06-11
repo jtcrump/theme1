@@ -313,6 +313,16 @@
     <?php endif; ?>
 
     <?php if ($site_name) :?>
+
+<div class="copyright large-12 columns">
+<ul class="footer-perm">
+<li><a href="http://tulane.edu/privacy.cfm">Privacy</a></li>
+<li><a href="http://tulane.edu/feedback.cfm">Feedback</a></li>
+<li><a href="http://tulane.edu/copyright.cfm">Copyright</a></li>
+<li><a href="http://tulane.edu/">Tulane Home</a></li>
+</ul>
+</div>
+
       <div class="copyright large-12 columns">
         &copy; <?php print date('Y'); ?><!--- <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?> --->
 Tulane University, 6823 St. Charles Avenue, New Orleans, LA 70118 504-865-5000 <a href="mailto:website@tulane.edu">website@tulane.edu</a>
