@@ -83,11 +83,23 @@
 
 			</div> 
 		</div>
-	</div>    
+	</div>   
+ 
 
       <?php if ($alt_main_menu): ?>
         <nav id="main-menu" class="navigation white" role="navigation">
-          <div class="main_menu_wrapper"><?php print ($alt_main_menu); ?></div>
+
+
+
+
+
+
+          <div class="main_menu_wrapper">
+
+
+	<label for="show-menu" class="show-menu">Show Menu</label>
+	<input type="checkbox" id="show-menu" role="button">
+<?php print ($alt_main_menu); ?></div>
         </nav>  <!--- /#main-menu --->
       <?php endif; ?>
 
