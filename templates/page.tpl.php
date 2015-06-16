@@ -94,22 +94,22 @@
 
 
 
-          <div class="main_menu_wrapper">
-
-
+<div class="main_menu_wrapper">
 	<label for="show-menu" class="show-menu">Show Menu</label>
 	<input type="checkbox" id="show-menu" role="button">
 <?php print ($alt_main_menu); ?></div>
         </nav>  <!--- /#main-menu --->
       <?php endif; ?>
+</div>
 
+<div class="secondary_menu_wrapper">
       <?php if ($alt_secondary_menu): ?>
         <nav id="secondary-menu" class="navigation" role="navigation">
           <?php print $alt_secondary_menu; ?>
         </nav>  <!--- /#secondary-menu --->
       <?php endif; ?>
-
 </div>
+
 
 
 
