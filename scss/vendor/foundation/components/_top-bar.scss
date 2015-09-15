@@ -6,35 +6,30 @@
 @import "grid";
 @import "buttons";
 
+
+
+
 //
 // Top Bar Variables
 //
 $include-html-top-bar-classes: $include-html-classes !default;
 
 // Background color for the top bar
-$topbar-bg-color: $primary-color !default;
+$topbar-bg-color: #333 !default;
 $topbar-bg: $topbar-bg-color !default;
 
 // Height and margin
-$topbar-height: 145px !default;
+$topbar-height: 45px !default;
 $topbar-margin-bottom: 0 !default;
-
-.top-fixed-nav{
-color: #fff !important;
-
-}
 
 // Controlling the styles for the title in the top bar
 $topbar-title-weight: $font-weight-normal !default;
-// $topbar-title-font-size: rem-calc(17) !default;
-$topbar-title-font-size: 40px !default;
+$topbar-title-font-size: rem-calc(17) !default;
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: #00331A !default;
-// $topbar-dropdown-bg: #333 !default;
+$topbar-dropdown-bg: #333 !default;
 $topbar-dropdown-link-color: #fff !default;
-$topbar-dropdown-link-bg: #00331A !default;
-// $topbar-dropdown-link-bg: #333 !default;
+$topbar-dropdown-link-bg: #333 !default;
 $topbar-dropdown-link-weight: $font-weight-normal !default;
 $topbar-dropdown-toggle-size: 5px !default;
 $topbar-dropdown-toggle-color: #fff !default;
@@ -49,10 +44,8 @@ $topbar-link-weight: $font-weight-normal !default;
 $topbar-link-font-size: rem-calc(13) !default;
 $topbar-link-hover-lightness: -10% !default; // Darken by 10%
 $topbar-link-bg: $topbar-bg !default;
-$topbar-link-bg-hover: #00331A !default;
-/* $topbar-link-bg-hover: #272727 !default; */
-$topbar-link-bg-color-hover: #00331A !default;
-/* $topbar-link-bg-color-hover: #555555 !default; */
+$topbar-link-bg-hover: #272727 !default;
+$topbar-link-bg-color-hover: #555555 !default;
 $topbar-link-bg-active: $primary-color !default;
 $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%) !default;
 $topbar-link-font-family: $body-font-family !default;
@@ -66,8 +59,7 @@ $topbar-dropdown-label-color: #777 !default;
 $topbar-dropdown-label-text-transform: uppercase !default;
 $topbar-dropdown-label-font-weight: $font-weight-bold !default;
 $topbar-dropdown-label-font-size: rem-calc(10) !default;
-$topbar-dropdown-label-bg: #00331A !default;
-// $topbar-dropdown-label-bg: #333 !default;
+$topbar-dropdown-label-bg: #333 !default;
 
 // Top menu icon styles
 $topbar-menu-link-transform: uppercase !default;
@@ -103,137 +95,6 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
   display: block;
   @include element-invisible-off();
   position: absolute !important; // Reset the position from static to absolute
-}
-
-
-
-
-@media only screen and (min-width:40.063em){
-.top-bar {
-background:#00331A;
-/* background:#333333; */
-*zoom:1;overflow:visible;
-}
-.top-bar:before ,.top-bar:after {
-content:" ";display:table;
-}
-.top-bar:after {
-clear:both;
-}
-.top-bar .toggle-topbar {
-display:none;
-}
-.top-bar .title-area {
-float:left;
-}
-.top-bar .name h1 a {
-width:auto;
-}
-.top-bar input ,.top-bar .button {
-font-size:0.875rem;position:relative;top:7px;
-}
-.top-bar.expanded {
-background:#00331A;
-/* background:#333333; */
-}
-.contain-to-grid .top-bar {
-max-width:62.5rem;margin:0 auto;margin-bottom:0;
-}
-.top-bar-section {
--webkit-transition:none 0 0;-moz-transition:none 0 0;transition:none 0 0;left:0 !important;
-}
-.top-bar-section ul {
-width:auto;height:auto !important;display:inline;
-}
-.top-bar-section ul li {
-float:left;
-}
-.top-bar-section ul li .js-generated {
-display:none;
-}
-.top-bar-section li.hover>a:not(.button) {
-background:#00331A;
-/* background:#272727; */
-color:#ffffff;
-}
-.top-bar-section li:not(.has-form) a:not(.button) {
-padding:0 15px;line-height:45px;
-background:#00331A;
-/* background:#333333; */
-}
-.top-bar-section li:not(.has-form) a:not(.button):hover {
-background:#00331A;
-/* background:#272727; */
-}
-.top-bar-section li.active:not(.has-form) a:not(.button) {
-padding:0 15px;line-height:45px;color:#ffffff;background:#008cba;
-}
-.top-bar-section li.active:not(.has-form) a:not(.button):hover {
-background:#007ba0;
-}
-.top-bar-section .has-dropdown>a {
-padding-right:35px !important;
-}
-.top-bar-section .has-dropdown > a:after {
-content:"";display:block;width:0;height:0;border:inset 5px;border-color:rgba(255, 255, 255, 0.4) transparent transparent transparent;
-border-top-style:solid;margin-top:-2.5px;top:22.5px;
-}
-.top-bar-section .has-dropdown.moved {
-position:relative;
-}
-.top-bar-section .has-dropdown.moved>.dropdown {
-display:none;
-}
-.top-bar-section .has-dropdown.hover>.dropdown ,.top-bar-section .has-dropdown.not-click:hover>.dropdown {
-display:block;
-}
-.top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
-border:none;content:"\00bb";top:1rem;margin-top:-2px;right:5px;line-height:1.2;
-}
-.top-bar-section .dropdown {
-left:0;top:auto;background:transparent;min-width:100%;
-}
-.top-bar-section .dropdown li a {
-color:#ffffff;line-height:1;white-space:nowrap;padding:12px 15px;
-background:#00331A;
-/* background:#333333; */
-}
-.top-bar-section .dropdown li label {
-white-space:nowrap;
-background:#00331A;
-/* background:#333333; */
-}
-.top-bar-section .dropdown li .dropdown {
-left:100%;top:0;
-}
-.top-bar-section>ul>.divider ,.top-bar-section>ul>[role="separator"] {
-border-bottom:none;border-top:none;border-right:solid 1px #4e4e4e;clear:none;height:45px;width:0;
-}
-.top-bar-section .has-form {
-background:#00331A;
-/* background:#333333; */
-padding:0 15px;height:45px;
-}
-.top-bar-section .right li .dropdown {
-left:auto;right:0;
-}
-.top-bar-section .right li .dropdown li .dropdown {
-right:100%;
-}
-.top-bar-section .left li .dropdown {
-right:auto;left:0;
-}
-.top-bar-section .left li .dropdown li .dropdown {
-left:100%;
-}
-
-.no-js .top-bar-section ul li:active>a {
-background:#008cba;color:#ffffff;
-}
-.no-js .top-bar-section 
-.has-dropdown:hover>.dropdown {
-display:block;
-}
 }
 
 @include exports("top-bar") {
@@ -322,8 +183,7 @@ display:block;
 
       .name {
         height: $topbar-height;
-        margin-top: 20px;
-        margin-bottom: -20px;
+        margin: 0;
         font-size: $rem-base;
 
         h1 {

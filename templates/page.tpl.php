@@ -11,12 +11,7 @@
 
 
 
-
-
-
 <div id="header" role="banner" class="header">
-
-
 	<div class="row-top-nav">
 		<div class="topbar container">
       			<div class="col-md-6">
@@ -26,27 +21,15 @@
              		<li><a href="javascript:;"><i class="fa fa-folder-open"></i> MyTulane</a></li>
           		</ul>
       			</div>
-      			<div class="col-md-6">
-                        <!---
-          			<div class="search-container">
-            			<form action="#" method="post" class="inline-form searchbox">
-            			<input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
-            			<input type="submit" class="searchbox-submit" value="GO">
-            			<span class="searchbox-icon"><i class="fa fa-lg fa-search"></i><span class="sr-only">Search</span></span>
-            			</form>
-          			</div>     
---->
-                                
+      			<div class="col-md-6">        
 <div class="search-container">
 <!-- Google CSE Search Box Begins --->
 <form action="//tulane.edu/search-results2.cfm" id="searchbox_017967096760080950669:bl9vlsogwoo" name="Site2" class="inline-form searchbox">
 <input type="hidden" name="cx" value="017967096760080950669:bl9vlsogwoo" />
 <input type="hidden" name="cof" value="FORID:11" />
 <input type="hidden" name="as_dt" value="" />
- 
 <input type="hidden" name="as_sitesearch" value="tulane.edu#getDirectoryFromPath(cgi.script_name)#" />
 <input type="hidden" name="siteURL" value="tulane.edu" />
-
 <ul class="search">
 <li>
 <input type="search" placeholder="Search......" name="q" class="searchbox-input" onkeyup="buttonUp();" required />
@@ -60,124 +43,105 @@
 </div>
 <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_017967096760080950669%3Abl9vlsogwoo"></script>
 					<!--- Google CSE Search Box Ends --->
-
-  
 			</div>
 		</div>
 	</div>
 
+
+
+
+
 	<div class="row-banner">
 		<div class="container">
 			<div class="header-table">
-
-
-
 <ul id="header-mid-banner">
-
 <li><div class="cell-shield"><div class="tu-shield"></div></div></li>
-
 <li><div class="cell-school">
 <a href="//tulane.edu"><div class="main_title">T<span class="move">ulane University</span></div></a>
 </div></li>
-
 <li><div class="cell-dept"><h2><?php print $linked_site_name; ?><h2></div></li>
-
 </ul>
-
-
- 
-
 			</div> 
 		</div>
 	</div>   
- 
 
 
 
-          <!--.top-bar -->
-<nav class="top-bar" data-topbar  data-options="">
-
-	<ul class="title-area">
-            <li class="name"></li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
-	    </li>
-	</ul>
 
 
+
+
+
+
+
+
+
+
+
+
+      <!--.top-bar -->
+      <?php if ($top_bar_classes): ?>
+      <div class="<?php print $top_bar_classes; ?>">
+      <?php endif; ?>
+        <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
+          <ul class="title-area">
+            <!--- <li class="name"><h1><?php print $linked_site_name; ?></h1></li> --->
+            <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
+          </ul>
+          <section class="top-bar-section">
             <?php if ($top_bar_main_menu) :?>
- 		<section class="top-bar-section">
-              	<?php print $top_bar_main_menu; ?>
- 		</section>
+              <?php print $top_bar_main_menu; ?>
             <?php endif; ?>
+            <?php if ($top_bar_secondary_menu) :?>
+              <?php print $top_bar_secondary_menu; ?>
+            <?php endif; ?>
+          </section>
+        </nav>
+      <?php if ($top_bar_classes): ?>
+      </div>
+      <?php endif; ?>
+      <!--/.top-bar -->
+    <?php endif; ?>
 
- </nav>
-           <!-- .top-bar -->
+    <!-- Title, slogan and menu -->
+    <?php if ($alt_header): ?>
+    <section class="row <?php print $alt_header_classes; ?>">
 
+      <?php if ($linked_logo): print $linked_logo; endif; ?>
 
+      <?php if ($site_name): ?>
+        <?php if ($title): ?>
+          <div id="site-name" class="element-invisible">
+            <strong>
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+            </strong>
+          </div>
+        <?php else: /* Use h1 when the content title is empty */ ?>
+          <h1 id="site-name">
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+          </h1>
+        <?php endif; ?>
+      <?php endif; ?>
 
+      <?php if ($site_slogan): ?>
+        <h2 title="<?php print $site_slogan; ?>" class="site-slogan"><?php print $site_slogan; ?></h2>
+      <?php endif; ?>
 
+      <?php if ($alt_main_menu): ?>
+        <nav id="main-menu" class="navigation" role="navigation">
+          <?php print ($alt_main_menu); ?>
+        </nav> <!-- /#main-menu -->
+      <?php endif; ?>
 
-
-<?php if ($alt_main_menu): ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php endif; ?>
-
-
-<div class="secondary_menu_wrapper">
       <?php if ($alt_secondary_menu): ?>
         <nav id="secondary-menu" class="navigation" role="navigation">
           <?php print $alt_secondary_menu; ?>
-        </nav>  <!--- /#secondary-menu --->
+        </nav> <!-- /#secondary-menu -->
       <?php endif; ?>
-</div>
 
-
-
-
-
-
+    </section>
     <?php endif; ?>
-  <!--   End title, slogan and menu -->
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- End title, slogan and menu -->
 
     <?php if (!empty($page['header'])): ?>
       <!--.l-header-region -->
@@ -221,22 +185,6 @@
     </section>
     <!--/.l-help -->
   <?php endif; ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <main role="main" class="row l-main">
     <div class="<?php print $main_grid; ?> main columns">
@@ -330,25 +278,20 @@
 
   <!--.l-footer-->
   <footer class="l-footer panel row" role="contentinfo">
+    <?php if (!empty($page['footer'])): ?>
+      <div class="footer large-12 columns">
+        <?php print render($page['footer']); ?>
+      </div>
+    <?php endif; ?>
 
-
-
-<div class="footer large-12 columns">
-<?php if (!empty($page['footer'])): ?>
-<?php  print render($page['footer']); ?>
-<?php endif; ?>
-</div>
-
-
-
+    <?php if ($site_name) :?>
+      <div class="copyright large-12 columns">
+        &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
+      </div>
+    <?php endif; ?>
   </footer>
   <!--/.footer-->
 
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>
 <!--/.page -->
-
-
-
-
-
