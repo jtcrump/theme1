@@ -97,7 +97,6 @@
           <!--.top-bar -->
 <nav class="top-bar" data-topbar  data-options="">
 
-
 	<ul class="title-area">
             <li class="name"></li>
             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
@@ -105,18 +104,11 @@
 	</ul>
 
 
-          <section class="top-bar-section">
-            <ul id="main-menu" class="main-nav left">
-		<li class="first leaf" title=""><a href="http://cnn.com" title="">CNN</a></li>
-		<li class="leaf" title=""><a href="http://riptide.dd:8083" title="">Home</a></li>
-		<li class="last expanded has-dropdown"><a href="/news/sylvia-roberts" class="active">My first news story</a>
-			<ul class="dropdown">
-			<li class="last expanded show-for-small"><a href="/news/sylvia-roberts" class="active">My first news story</a>
-			<li class="first last leaf"><a href="/content/color-palette">Color Palette</a></li>
-			</ul>
-		</li>
-	    </ul>                                  
-	  </section>
+            <?php if ($top_bar_main_menu) :?>
+ 		<section class="top-bar-section">
+              	<?php print $top_bar_main_menu; ?>
+ 		</section>
+            <?php endif; ?>
 
  </nav>
            <!-- .top-bar -->
