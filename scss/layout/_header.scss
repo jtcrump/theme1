@@ -385,14 +385,14 @@ display:none !important;
 }
 
 .main_menu_wrapper{
-margin-left: 10%;
+margin-left: 20%;
 border:0px solid red;
 }
 
 #main-menu{
 padding-top:0px;
 @include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
-
+margin-left: -10%;
 }
 
 .main-nav {
@@ -404,7 +404,7 @@ background: none !important;
 }
 
 .main-nav li a{
-font-size: 16px !important;
+font-size: 15px !important;
 background: none !important;
 text-decoration: none;
 }
