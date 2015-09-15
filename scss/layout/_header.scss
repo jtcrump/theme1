@@ -368,6 +368,10 @@ input[type=checkbox]:checked ~ #main-menu-links{
 display:block;
 }
 
+#main-menu{
+margin-left: -10%;
+}
+
 @media (max-width: 760px){
 .main-nav{
 width:100%;
