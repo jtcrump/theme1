@@ -46,9 +46,15 @@
  
 <input type="hidden" name="as_sitesearch" value="tulane.edu#getDirectoryFromPath(cgi.script_name)#" />
 <input type="hidden" name="siteURL" value="tulane.edu" />
-<input type="search" placeholder="Search......" name="q" class="searchbox-input" onkeyup="buttonUp();" required>
-			
-<input id="go" type="submit" name="sa" class="searchbox-submit" value="GO" placeholder="GO"/>
+
+<ul class="search">
+<li>
+<input type="search" placeholder="Search......" name="q" class="searchbox-input" onkeyup="buttonUp();" required />
+</li>
+<li>			
+<input id="go" type="submit" name="sa" class="searchbox-submit" value="GO" placeholder="GO" />
+</li>
+</ul>
 <!--- <span class="searchbox-icon"><i class="fa fa-lg fa-search"></i><span class="sr-only">Search</span></span> --->
 </form>
 </div>
@@ -86,21 +92,72 @@
 	</div>   
  
 
-      <?php if ($alt_main_menu): ?>
-        <nav id="main-menu" class="navigation white" role="navigation">
+
+
+          <!--.top-bar -->
+<nav class="top-bar" data-topbar  data-options="">
+
+
+	<ul class="title-area">
+            <li class="name"></li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
+	    </li>
+	</ul>
+
+
+          <section class="top-bar-section">
+            <ul id="main-menu" class="main-nav left">
+		<li class="first leaf" title=""><a href="http://cnn.com" title="">CNN</a></li>
+		<li class="leaf" title=""><a href="http://riptide.dd:8083" title="">Home</a></li>
+		<li class="last expanded has-dropdown"><a href="/news/sylvia-roberts" class="active">My first news story</a>
+			<ul class="dropdown">
+			<li class="last expanded show-for-small"><a href="/news/sylvia-roberts" class="active">My first news story</a>
+			<li class="first last leaf"><a href="/content/color-palette">Color Palette</a></li>
+			</ul>
+		</li>
+	    </ul>                                  
+	  </section>
+
+ </nav>
+           <!-- .top-bar -->
 
 
 
 
 
 
-<div class="main_menu_wrapper">
-	<label for="show-menu" class="show-menu">Show Menu</label>
-	<input type="checkbox" id="show-menu" role="button">
-<?php print ($alt_main_menu); ?></div>
-        </nav>  <!--- /#main-menu --->
-      <?php endif; ?>
-</div>
+<?php if ($alt_main_menu): ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php endif; ?>
+
 
 <div class="secondary_menu_wrapper">
       <?php if ($alt_secondary_menu): ?>
@@ -114,83 +171,15 @@
 
 
 
-      <!--.top-bar 
-      <?php if ($top_bar_classes): ?>
-      <div class="<?php print $top_bar_classes; ?>">
-      <?php endif; ?>
 
-        <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
-
-          <ul class="title-area">
-<li>
-<a class="top-fixed-nav" href="http://tulane.edu/email/">Email</a> 
-<a class="top-fixed-nav" href="https://gibson.tulane.edu/">Gibson Online</a> 
-<a class="top-fixed-nav" href="http://tulane.blackboard.com/">myTulane</a>
-</li>
-            <li class="name"><h1><a href="/">Tulane
-
-<?php print $linked_site_name; ?>
-
-</h1></li>
-
-
-            <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
-          </ul>
-
-          <section class="top-bar-section">
-            <?php if ($top_bar_main_menu) :?>
-              <?php print $top_bar_main_menu; ?>
-            <?php endif; ?>
-            <?php if ($top_bar_secondary_menu) :?>
-              <?php print $top_bar_secondary_menu; ?>
-            <?php endif; ?>
-          </section>
-        </nav>
-      <?php if ($top_bar_classes): ?>
-      </div>
-      <?php endif; ?>
-      /.top-bar 
     <?php endif; ?>
+  <!--   End title, slogan and menu -->
 
-     Title, slogan and menu 
-    <?php if ($alt_header): ?>
-    <section class="row <?php print $alt_header_classes; ?>">
 
-      <?php if ($linked_logo): print $linked_logo; endif; ?>
 
-      <?php if ($site_name): ?>
-        <?php if ($title): ?>
-          <div id="site-name" class="element-invisible">
-            <strong>
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </strong>
-          </div>
-        <?php else: /* Use h1 when the content title is empty */ ?>
-          <h1 id="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-          </h1>
-        <?php endif; ?>
-      <?php endif; ?>
 
-      <?php if ($site_slogan): ?>
-        <h2 title="<?php print $site_slogan; ?>" class="site-slogan"><?php print $site_slogan; ?></h2>
-      <?php endif; ?>
 
-      <?php if ($alt_main_menu): ?>
-        <nav id="main-menu" class="navigation" role="navigation">
-          <?php print ($alt_main_menu); ?>
-        </nav>  /#main-menu 
-      <?php endif; ?>
 
-      <?php if ($alt_secondary_menu): ?>
-        <nav id="secondary-menu" class="navigation" role="navigation">
-          <?php print $alt_secondary_menu; ?>
-        </nav>  /#secondary-menu 
-      <?php endif; ?>
-
-    </section>
-    <?php endif; ?>
-     End title, slogan and menu -->
 
 
 
@@ -240,6 +229,22 @@
     </section>
     <!--/.l-help -->
   <?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <main role="main" class="row l-main">
     <div class="<?php print $main_grid; ?> main columns">
@@ -333,28 +338,17 @@
 
   <!--.l-footer-->
   <footer class="l-footer panel row" role="contentinfo">
-    <?php if (!empty($page['footer'])): ?>
-      <div class="footer large-12 columns">
-        <?php print render($page['footer']); ?>
-      </div>
-    <?php endif; ?>
 
-    <?php if ($site_name) :?>
 
-<div class="copyright large-12 columns">
-<ul class="footer-perm">
-<li><a href="http://tulane.edu/privacy.cfm">Privacy</a></li>
-<li><a href="http://tulane.edu/feedback.cfm">Feedback</a></li>
-<li><a href="http://tulane.edu/copyright.cfm">Copyright</a></li>
-<li><a href="http://tulane.edu/">Tulane Home</a></li>
-</ul>
+
+<div class="footer large-12 columns">
+<?php if (!empty($page['footer'])): ?>
+<?php  print render($page['footer']); ?>
+<?php endif; ?>
 </div>
 
-      <div class="copyright large-12 columns">
-        &copy; <?php print date('Y'); ?><!--- <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?> --->
-Tulane University, 6823 St. Charles Avenue, New Orleans, LA 70118 504-865-5000 <a href="mailto:website@tulane.edu">website@tulane.edu</a>
-      </div>
-    <?php endif; ?>
+
+
   </footer>
   <!--/.footer-->
 
