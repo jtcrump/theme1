@@ -122,7 +122,17 @@ padding-bottom: 1px;
 	}
 
 
+.breadcrumbs > .current
+{
+  cursor: default;
+  color: #333333;
+}
 
+.breadcrumbs > .current:hover, .breadcrumbs > .current:hover a, .breadcrumbs > .current:focus, .breadcrumbs > .current:focus a
+{
+  text-decoration-line: none;
+  text-decoration-style: solid;
+}
 
  
 .header-table {
