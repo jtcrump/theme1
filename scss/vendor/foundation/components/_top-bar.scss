@@ -33,7 +33,7 @@ $topbar-title-weight: $font-weight-normal !default;
 $topbar-title-font-size: rem-calc(17) !default;
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: #333 !default;
+$topbar-dropdown-bg: none !default;
 $topbar-dropdown-link-color: #fff !default;
 $topbar-dropdown-link-bg: #333 !default;
 $topbar-dropdown-link-weight: $font-weight-normal !default;
@@ -151,12 +151,15 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
       }
     }
 
+
+
     .top-bar {
       overflow: hidden;
       height: $topbar-height;
       line-height: $topbar-height;
       position: relative;
-      background: $topbar-bg;
+@include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
+      /* background: $topbar-bg; */
       margin-bottom: $topbar-margin-bottom;
 
       // Topbar Global list Styles
@@ -311,6 +314,7 @@ margin-bottom: 2px;
         width: 100%;
       }
 
+
       ul li {
         background: $topbar-dropdown-bg;
         & > a {
@@ -450,9 +454,11 @@ margin-bottom: 2px;
     // Top Bar styles intended for screen sizes above the breakpoint.
     @media #{$topbar-media-query} {
       .top-bar {
-        background: $topbar-bg;
+@include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
+       /* background: $topbar-bg; */
         @include clearfix;
-        overflow: visible;
+        overflow: hidden;
+        /* overflow: visible; */
 
         .toggle-topbar { display: none; }
 
