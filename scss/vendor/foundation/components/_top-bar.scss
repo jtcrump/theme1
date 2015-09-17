@@ -178,7 +178,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
       .button, button {
         padding-top: .45rem;
         padding-bottom: .35rem;
-        margin-bottom: 0;
+        margin-bottom: 10px;
         font-size: $topbar-button-font-size;
           // position: relative;
           // top: -1px;
