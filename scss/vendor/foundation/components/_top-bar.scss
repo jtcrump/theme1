@@ -26,7 +26,7 @@ $topbar-bg: $topbar-bg-color !default;
 
 // Height and margin
 $topbar-height: 45px !default;
-$topbar-margin-bottom: 0 !default;
+$topbar-margin-bottom: 10 !default;
 
 // Controlling the styles for the title in the top bar
 $topbar-title-weight: $font-weight-normal !default;
@@ -178,7 +178,6 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
       .button, button {
         padding-top: .45rem;
         padding-bottom: .35rem;
-        margin-bottom: 10px;
         font-size: $topbar-button-font-size;
           // position: relative;
           // top: -1px;
