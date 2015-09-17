@@ -63,14 +63,7 @@ h2 a{color:#fff;}h2 a:hover{text-decoration:none;color:#fff;}
 
 @media (min-width: 992px){height:91px;}
 
-@media (min-width: 1200px){
-height:109px;
-.tu-shield{background:url('../images/tu-shield-sprite.png') no-repeat 0px -241px transparent;
-padding:0px 0;
-height:45px;
-width:32px;
-overflow:hidden;float:left;
-}}
+
 
 @media (min-width: 768px){.tu-shield{background-position:0px -178px;height:61px;width:44px;}}
 
