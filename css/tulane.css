@@ -35,7 +35,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 .header .row-top-nav{padding-bottom:1px;background-color:#00331a;background-color:rgba(0, 51, 26, 0.9);}
 
 
+.header-table{
+border:0px solid red;
 
+padding:4px 15px;
+margin-top:0px;
+margin-left:15%;
+}
 
 
 
