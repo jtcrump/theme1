@@ -110,9 +110,14 @@ content:" ";margin:0;
 
                 @media(max-width: 760px){
            	background-size: 100% 270px; 
-border: 1px solid red;
+border: 0px solid red;
         	}
         
+                @media(max-width: 480px){
+           	background-size: 100% 310px; 
+border: 0px solid red;
+        	}
+
 	margin-bottom: 0px;
 
 
