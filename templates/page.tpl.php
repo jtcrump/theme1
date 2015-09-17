@@ -1,4 +1,7 @@
-
+<?php
+$screenWidth = '<script type="text/javascript">document.write(screen.availWidth);</script>';
+echo $screenWidth . "<br /><br />";
+?>
 <!--.page -->
 <div role="document" class="page">
 
