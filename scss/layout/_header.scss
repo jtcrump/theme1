@@ -107,14 +107,14 @@ content:" ";margin:0;
         background:url('../images/bg_1.jpg') no-repeat center top transparent;
 
         background-size: 100% 100%;
-        /*
+        
         	@media(max-width: 760px){
            	background-size: 100% 180px; 
         	}
                 @media(max-width: 760px){
-           	background-size: 100% 320px; 
+           	background-size: 100% 310px; 
         	}
-        */
+        
 	margin-bottom: 0px;
 
 
@@ -173,10 +173,10 @@ padding-bottom: 1px;
  
 .header-table {
 border: 0px solid red;
-/* min-width:450px;
-padding: 4px 15px;
+/* min-width:450px;*/
+padding: 4px 0px;
 margin-top: 0px;
-margin-left:15%; */
+margin-left:15%; 
 }
 
 #header-mid-banner ul{
