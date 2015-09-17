@@ -36,9 +36,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 
 .header-table{
-border:0px solid red;
+border:1px solid red;
+min-width:450px;
 
-padding:4px 15px;
 margin-top:0px;
 margin-left:15%;
 }
