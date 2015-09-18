@@ -151,7 +151,9 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
       }
     }
 
-
+.toggle-topbar a{
+margin-top: 20px;
+}
 
     .top-bar {
       overflow: hidden;
@@ -453,11 +455,11 @@ margin-bottom: 2px;
     // Top Bar styles intended for screen sizes above the breakpoint.
     @media #{$topbar-media-query} {
       .top-bar {
+
 @include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
        /* background: $topbar-bg; */
         @include clearfix;
-        overflow: hidden;
-        /* overflow: visible; */
+        overflow: visible;
 
         .toggle-topbar { display: none; }
 
@@ -472,7 +474,9 @@ margin-bottom: 2px;
           top: $topbar-button-top;
         }
 
-        &.expanded { background: $topbar-bg; }
+        &.expanded { 
+@include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
+/* background: $topbar-bg; */ }
       }
 
       .contain-to-grid .top-bar {
@@ -677,7 +681,4 @@ margin-bottom: 2px;
       }
     }
   }
-}
-.toggle-topbar a{
-margin-top: 20px;
 }
