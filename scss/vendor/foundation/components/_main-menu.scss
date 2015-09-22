@@ -7,22 +7,23 @@
 }
 
 
-.top-bar {
-min-height:45px;
-line-height:45px;
-position:relative;
-@include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
-}
+
 
 
 #main-menu{
 padding-top:0px;
 @include alpha-attribute('background-color', rgba($greySpanishMoss, 0.9), $greySpanishMoss);
-margin-left:10%;
+margin-left:15%;
+}
+
+.top-bar-section{
+border: 0px solid blue;
 }
 
 .main-nav {
 background: none !important;
+border: 0px solid yellow;
+margin-left: 300px;
 }
 
 .main-nav li{
