@@ -30,7 +30,7 @@ min-width:300px;
   font-family: "Times New Roman",serif;
   font-weight: normal;
   font-size: 40px;
-  color: #ffffff;
+  color: #212121;
   letter-spacing: -0.06em;
 }
 .main_title
@@ -44,7 +44,7 @@ min-width:300px;
   font-family: "Times New Roman",serif;
   font-weight: normal;
   font-size: 40px;
-  color: #ffffff;
+  color: #212121;
   letter-spacing: -0.04em;
 }
 .move
@@ -187,10 +187,13 @@ padding: 4px 0px;
 }
 
 #header-mid-banner ul{
+
 vertical-align: middle;
 }
 
 #header-mid-banner li{
+margin-top:16px;
+margin-bottom: -16px;
 border: 0px solid yellow;
 padding-right: 10px;
 display: inline-block;
@@ -203,6 +206,7 @@ border: 0px solid blue;
 display: inline-block;
 text-shadow: 1px 1px 2px #000;
 }
+
 
 .cell-dept { 
 border: 0px solid red;

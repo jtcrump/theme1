@@ -58,7 +58,7 @@
 <ul id="header-mid-banner">
 <li><div class="cell-shield"><div class="tu-shield"></div></div></li>
 <li><div class="cell-school">
-<a href="//tulane.edu"><div class="main_title">T<span class="move">ulane University</span></div></a>
+&nbsp;
 </div></li>
 <li><div class="cell-dept"><h2><?php print $linked_site_name; ?><h2></div></li>
 </ul>
@@ -264,11 +264,16 @@
 
   <!--.l-footer-->
   <footer class="l-footer panel row" role="contentinfo">
-    <?php if (!empty($page['footer'])): ?>
+
       <div class="footer large-12 columns">
+<div class="cell-school">
+<a href="//tulane.edu"><div class="main_title">T<span class="move">ulane University</span></div></a>
+</div>
+    <?php if (!empty($page['footer'])): ?>
         <?php print render($page['footer']); ?>
-      </div>
     <?php endif; ?>
+      </div>
+
 <!--- 
     <?php if ($site_name) :?>
       <div class="copyright large-12 columns">
