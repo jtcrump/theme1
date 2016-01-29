@@ -115,7 +115,7 @@ $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%) !default;
   margin: 0 0 $form-spacing 0;
   padding: $form-spacing / 2;
   height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(1));
-  width: 100%;
+  // width: 100%;
   @include box-sizing(border-box);
   @if $input-include-glowing-effect {
     @include block-glowing-effect(focus, $glowing-effect-fade-time, $glowing-effect-color);
